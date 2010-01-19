@@ -1,0 +1,25 @@
+<project name="sitemesh-website" default="generate">
+
+  <taskdef name="sitemesh"
+           classname="org.sitemesh.ant.SiteMeshTask"
+           classpath="lib/sitemesh-3.0-alpha-1.jar"/>
+
+  <target name="generate" description="Generate web site">
+    <mkdir dir="out"/>
+    <copy todir="out">
+      <fileset dir="src">
+        <exclude name="decorators/**"/>
+      </fileset>
+    </copy>
+    <sitemesh srcdir="src"
+              config="sitemesh.xml"
+              destdir="out"
+              includes="**/*.html"
+              excludes="decorators/*"/> 
+  </target>
+
+  <target name="clean">
+    <delete dir="out"/>
+  </target>
+
+</project>

@@ -1,0 +1,94 @@
+/* 950px (12 * 70px) + (11 * 10px) spacing */
+
+pre {
+	overflow: auto;
+	border: 1px solid black;
+}
+
+header, article section#summary, article h1#title, article section#body {
+	display: block;
+	width: 950px;
+	margin: 0 auto 0 auto;
+}
+
+article section#summary, article section#body {
+	display: block;
+	width: 720px;
+	padding: 10px 230px 10px 0;
+}
+
+header #logo {
+	display: inline-block;
+	margin: 10px 0 10px 0;
+}
+
+header nav#toplinks {
+	position: absolute;
+	top: 0;
+	width: 950px;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+	text-align: right;
+}
+
+header nav#toplinks a {
+	color: #ffffff;
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	padding: 6px;
+	margin: 0;
+}
+
+header nav#toplinks a:hover {
+	background-color: green;
+}
+
+header nav#toplinks > ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0 4px 0 4px;
+	text-align: right;
+	background-color: #646462;
+	border-radius: 0 0 6px 6px;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+header nav#toplinks > ul > li {
+	display: inline-block;
+	margin: 0;
+}
+
+header nav#articlelinks {
+	position: absolute;
+	width: 210px;
+	background-color: #cccccc;
+	margin: 20px 10px 10px 730px;
+	border: 5px solid #ffffff;
+	border-radius: 6px;
+	float: right;
+}
+
+article #title_container {
+	background-color: #333333;
+	background-image: url(title-bg.png);
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+
+article h1#title {
+	color: #ffffff;
+	height: 50px;
+	position: relative;
+	top: 5px;
+}
+
+article #summary_container {
+	xbackground-color: #fb9c2e;
+	background-color: #ffae52;
+}
+

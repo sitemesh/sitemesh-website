@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title><sitemesh:write property="title">Title Goes Here</sitemesh:write></title>
+    <link rel="stylesheet" href="resources/960-reset.css" type="text/css" />
+    <link rel="stylesheet" href="resources/960-text.css" type="text/css" />
+    <link rel="stylesheet" href="resources/article.css" type="text/css" />
+    <sitemesh:write property="head"/>
+  </head>
+  <body>
+
+    <header>
+      <nav id="toplinks">
+        <ul>
+          <li><a href="#">learn</a></li>
+          <li><a href="#">download</a></li>
+          <li><a href="#">docs</a></li>
+          <li><a href="#">community</a></li>
+          <li><a href="#">contribute</a></li>
+        </ul>
+      </nav>
+      <a id="logo" href="#"><img src="resources/sitemesh-logo.gif" width="330" height="82" alt="SiteMesh"/></a>
+      <nav id="articlelinks">
+        <ul>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+          <li><a href="#">Foo</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <article> 
+      <div id="title_container">
+        <h1 id="title">
+          <sitemesh:write property="title">Title Goes Here</sitemesh:write>
+        </h1>
+      </div>
+      <div id="summary_container">
+        <section id="summary">
+
+              <h2>Introduction (TODO)</h2> 
+              <p>This tutorial is a quick introduction to using SiteMesh3 in a web-application. It covers:</p> 
+              <ul> 
+                <li>A high level overview of how SiteMesh3 works</li> 
+                <li>Installation and configuration</li> 
+                <li>Building and applying a simple decorator</li> 
+              </ul> 
+           
+              <p>It is recommend you read the high level <a href="overview.html">SiteMesh Overview</a> before this tutorial.</p> 
+
+        </section>
+      </div>
+      <section id="body">
+        <sitemesh:write property="body">
+          <h2>Here is a title</h2>
+          <p>Main body goes here.<p>
+          <p>Blah de blah blah blah blah blah blah de blah blah blah blah blah blah de blah blah blah blah blah blah.
+          Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. 
+          Blah de blah blah blah blah blah blah de blah blah blah blah blah blah de blah blah blah blah blah blah.
+          Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. </p>
+        </sitemesh:write>
+      </section>
+    </article>
+
+   </body>
+</html>
