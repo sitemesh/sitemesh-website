@@ -42,8 +42,12 @@ header nav#toplinks a {
 	margin: 0;
 }
 
-header nav#toplinks a:hover {
-	background-color: green;
+header nav#toplinks a:hover, header nav#toplinks a.selected:hover {
+	background-color: #444444;
+}
+
+header nav#toplinks a.selected{
+	background-color: #fb9c2e;
 }
 
 header nav#toplinks > ul {
@@ -51,11 +55,8 @@ header nav#toplinks > ul {
 	margin: 0;
 	padding: 0 4px 0 4px;
 	text-align: right;
-	background-color: #646462;
+	background-color: #646464;
 	border-radius: 0 0 6px 6px;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-bottom: 1px solid #000000;
 }
 
 header nav#toplinks > ul > li {
