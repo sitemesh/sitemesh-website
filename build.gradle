@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+description = 'SiteMesh 3 Website'
+
+repositories {
+    mavenCentral() 
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    runtimeOnly 'org.sitemesh:sitemesh:3.1.0-SNAPSHOT'
+}
+
+clean.doFirst {
+    delete 'docs'    
+}
+
+task generateSite(type: Copy) {  
+    from 'src'
+    include '**/*.*'
+    exclude 'decorators/**'
+    into 'docs'
+}
+
+generateSite.doLast { 
+    ant.taskdef classname: 'org.sitemesh.ant.SiteMeshTask', name: 'sitemesh', classpath:configurations.runtimeClasspath.asPath
+    ant.sitemesh srcdir: 'src', config: 'sitemesh.xml', destdir: 'docs', includes:'**/*.html', excludes: 'decorators/*'
+}
+
+defaultTasks 'clean', 'generateSite'

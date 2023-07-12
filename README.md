@@ -8,4 +8,13 @@ ant clean
 ant
 ```
 
+or if you like Gradle, just run 
+```
+./gradlew 
+```
+or on Windows
+```
+./gradlew.bat 
+```
+
 [View it Here](https://sitemesh.github.io/sitemesh-website/)
