@@ -3,7 +3,7 @@
 Built using the Sitemesh 3 Offline Generator Ant Task
 
 ```
-sdk use java 11.0.19-amzn
+sdk use java 8.0.372-amzn
 ant clean
 ant
 ```
