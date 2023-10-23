@@ -2,7 +2,7 @@
 
   <taskdef name="sitemesh"
            classname="org.sitemesh.ant.SiteMeshTask"
-           classpath="lib/sitemesh-3.1.0-SNAPSHOT.jar"/>
+           classpath="lib/sitemesh-3.2.0-M2.jar"/>
 
   <target name="generate" description="Generate web site">
     <mkdir dir="docs"/>

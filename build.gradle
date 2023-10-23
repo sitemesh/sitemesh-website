@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    runtimeOnly 'org.sitemesh:sitemesh:3.1.0-SNAPSHOT'
+    runtimeOnly 'org.sitemesh:sitemesh:3.2.0-M2'
 }
 
 clean.doFirst {
